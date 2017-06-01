@@ -62,12 +62,8 @@ impl<T> EmptyBox<T> {
     /// Restore a value to an `EmptyBox`, creating a new `Box` and reusing the
     /// allocation of whatever `Box` was destroyed to create the `EmptyBox`.
     pub fn put(self, t: T) -> Box<T> {
-        let EmptyBox { ptr } = self;
-
-        // `Drop` will be run otherwise - this is because even though we've
-        // clearly moved out of `self`, it persists since the only field we
-        // matched from it is `Copy`.
-        mem::forget(self); 
+        let ptr = self.ptr;
+        mem::forget(self);
 
         unsafe {
             ptr::write(ptr, t);
