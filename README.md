@@ -2,8 +2,7 @@
 [![Docs Status](https://docs.rs/empty-box/badge.svg)](https://docs.rs/empty-box)
 [![On crates.io](https://img.shields.io/crates/v/empty-box.svg)](https://crates.io/crates/empty-box)
 
-# `EmptyBox`, a way to safely move values in and out of `Box`s without
-reallocations
+# `EmptyBox`, a way to safely move values in and out of `Box`s without reallocations
 
 `EmptyBox` is similar to a statically checked `Box<Option<T>>`:
 
