@@ -7,7 +7,7 @@ reallocations
 
 `EmptyBox` is similar to a statically checked `Box<Option<T>>`:
 
-```
+```rust
 use empty_box::EmptyBox;
 
 // A box with a string!
