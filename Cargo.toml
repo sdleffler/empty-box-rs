@@ -1,0 +1,22 @@
+[package]
+name = "empty-box"
+version = "0.1.0"
+authors = ["Sean Leffler <sean@errno.com>"]
+
+description = """
+Allows for `Box`s to have their values moved out and replaced with new values,
+while reusing the same allocation.
+"""
+
+documentation = "https://docs.rs/empty-box"
+homepage = "https://github.com/sdleffler/empty-box-rs"
+repository = "https://github.com/sdleffler/empty-box-rs"
+
+readme = "README.md"
+keywords = ["box", "move", "take", "replace", "reuse"]
+categories = ["data-structures", "memory-management", "rust-patterns"]
+
+license = "MIT/Apache-2.0"
+
+[badges]
+travis-ci = { "https://github.com/sdleffler/empty-box-rs" }
