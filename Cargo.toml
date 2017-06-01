@@ -19,4 +19,4 @@ categories = ["data-structures", "memory-management", "rust-patterns"]
 license = "MIT/Apache-2.0"
 
 [badges]
-travis-ci = { "https://github.com/sdleffler/empty-box-rs" }
+travis-ci = { repository = "https://github.com/sdleffler/empty-box-rs" }
